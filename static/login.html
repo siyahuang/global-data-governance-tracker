@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b635d">
+  <title>登录｜全球数据治理追踪器</title>
+  <link rel="stylesheet" href="/login.css">
+</head>
+<body>
+  <main class="login-shell">
+    <section class="login-intro">
+      <span class="brand-mark" aria-hidden="true">◎</span>
+      <p class="eyebrow">GLOBAL DATA GOVERNANCE TRACKER</p>
+      <h1>看清一周之内，<br>数据治理发生了什么。</h1>
+      <p>持续汇集全球监管机构、政府网站、国际组织和公开报道，提供国家地区检索、每周简报与活力热力图。</p>
+      <div class="feature-row"><span>全球动态</span><span>国内省市</span><span>每周分析</span></div>
+    </section>
+    <section class="login-card">
+      <div>
+        <p class="eyebrow">MEMBER ACCESS</p>
+        <h2 id="form-title">登录追踪器</h2>
+        <p class="muted" id="form-note">使用你的邮箱和密码继续。</p>
+      </div>
+      <form id="auth-form">
+        <label>邮箱<input id="email" name="email" type="email" autocomplete="email" required placeholder="name@example.com"></label>
+        <label>密码<input id="password" name="password" type="password" autocomplete="current-password" required minlength="10" placeholder="至少 10 位"></label>
+        <p class="form-error" id="form-error" role="alert"></p>
+        <button class="primary" type="submit" id="submit-button">登录</button>
+      </form>
+      <button class="switch" id="switch-mode" type="button">还没有账号？创建账号</button>
+      <p class="privacy">登录状态仅用于访问本站，不在页面中公开你的邮箱。</p>
+    </section>
+  </main>
+  <script src="/login.js" defer></script>
+</body>
+</html>

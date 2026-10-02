@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f9f9">
+  <meta name="description" content="持续追踪全球数据开放、数据空间、跨境数据流动与人工智能相关动态。">
+  <title>全球数据治理追踪器</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <button class="brand" data-view="home" aria-label="返回首页">
+        <span class="brand-mark" aria-hidden="true">◎</span>
+        <span><strong>全球数据治理追踪器</strong><small>GLOBAL DATA GOVERNANCE TRACKER</small></span>
+      </button>
+      <nav class="main-nav" aria-label="主导航">
+        <button class="nav-item active" data-view="home">首页</button>
+        <button class="nav-item" data-view="topics">按主题浏览</button>
+        <button class="nav-item" data-view="international">国际动态</button>
+        <button class="nav-item" data-view="china">国内动态</button>
+        <button class="nav-item" data-view="digest">每周简报</button>
+        <button class="nav-item" data-view="favorites">收藏</button>
+        <button class="nav-item" data-view="heatmap">活力热力图</button>
+      </nav>
+      <span class="header-update" id="header-update">持续更新</span>
+      <button class="menu-button" id="menu-button" aria-label="打开导航" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <section id="home-view" class="view active"></section>
+    <section id="news-view" class="view"></section>
+    <section id="international-view" class="view"></section>
+    <section id="china-view" class="view"></section>
+    <section id="digest-view" class="view"></section>
+    <section id="favorites-view" class="view"></section>
+    <section id="heatmap-view" class="view"></section>
+    <section id="topics-view" class="view"></section>
+  </main>
+
+  <footer class="site-footer">
+    <div><strong>全球数据治理追踪器</strong><p>汇集公开发布的信息，帮助你快速了解各地数据治理动态。</p></div>
+    <div class="footer-links"><button data-view="international">国际动态</button><button data-view="china">国内动态</button><button data-view="digest">每周简报</button><button data-view="favorites">收藏</button><button data-view="heatmap">活力热力图</button></div>
+    <small>具体信息请以所链接的来源原文为准。</small>
+  </footer>
+
+  <div class="drawer-backdrop" id="drawer-backdrop" hidden></div>
+  <aside class="detail-drawer" id="detail-drawer" aria-label="资讯详情" aria-hidden="true"></aside>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="/app.js" defer></script>
+</body>
+</html>

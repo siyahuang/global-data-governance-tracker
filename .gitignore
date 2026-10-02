@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.DS_Store
+.Rhistory
+data/news.sqlite3-shm
+data/news.sqlite3-wal
+data/*.db
+data/*.json
+data/run-*/
+data/reports/
+data/weekly-reports/
+data/server.log
+data/server-error.log
+data/daily-enrichment.json
+.env
