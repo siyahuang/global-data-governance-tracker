@@ -11,9 +11,9 @@ services:
       - key: DATA_DIR
         value: /var/data
       - key: REQUIRE_LOGIN
-        value: "1"
+        value: "0"
       - key: ALLOW_REGISTRATION
-        value: "1"
+        value: "0"
       - key: COOKIE_SECURE
         value: "1"
       - key: ENABLE_SCHEDULER
@@ -23,10 +23,6 @@ services:
       - key: DEEPSEEK_MODEL
         value: deepseek-chat
       - key: DEEPSEEK_API_KEY
-        sync: false
-      - key: ADMIN_EMAIL
-        sync: false
-      - key: ADMIN_PASSWORD
         sync: false
     disk:
       name: tracker-data
